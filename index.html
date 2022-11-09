@@ -28,6 +28,12 @@
         <p>Name: {{nameUser}}</p>
         <p>Class: {{className}}</p>
       </section>
+
+      <section id="binding-attribute" class="p-3 bg-black rounded text-white mb-3">
+        <h2 class="text-danger">Binding-Attribute</h2>
+        <img v-bind:src="ImgUrl" class="img-thumbnail w-50" alt={{ImgName}}>
+        <a v-bind:href="linkInfo" class="d-block btn btn-primary mt-3" target="_blank">View Detail</a>
+      </section>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
